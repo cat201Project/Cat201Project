@@ -19,6 +19,7 @@ public class SpaceShooter extends Application{
     }
     
 	//start
+	//main class
 	public static void main(String[] args) {
 		launch();
 	}
