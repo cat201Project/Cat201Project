@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('file:/Users/nmnor/eclipse-workspace/images/background.png');" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FirstStage">
+   <children>
+      <Label layoutX="132.0" layoutY="56.0" text="HYPER CONTRA X" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="42.0" />
+         </font>
+      </Label>
+      <Button fx:id="Button_Play" layoutX="111.0" layoutY="270.0" mnemonicParsing="false" onAction="#ButtonPlay" prefHeight="25.0" prefWidth="86.0" text="PLAY" />
+      <Button fx:id="closedButton" layoutX="257.0" layoutY="270.0" mnemonicParsing="false" onAction="#ButtonExit" prefHeight="25.0" prefWidth="86.0" text="EXIT" />
+      <Label fx:id="HighScore" alignment="CENTER" layoutX="124.0" layoutY="154.0" prefHeight="36.0" prefWidth="355.0" textFill="#f6eeee">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Player_Name" layoutX="164.0" layoutY="200.0" prefHeight="25.0" prefWidth="271.0" promptText="Player Name" />
+      <Button layoutX="413.0" layoutY="270.0" mnemonicParsing="false" onAction="#PreviewHighScore" prefHeight="25.0" prefWidth="86.0" text="HIGH SCORE" />
+   </children>
+</AnchorPane>
