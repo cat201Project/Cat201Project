@@ -18,8 +18,7 @@ public class SpaceShooter extends Application{
         stage.show();
     }
     
-	//start
-	// start main page
+	
 	public static void main(String[] args) {
 		launch();
 	}
