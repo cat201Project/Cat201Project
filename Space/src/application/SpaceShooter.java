@@ -18,6 +18,7 @@ public class SpaceShooter extends Application{
         stage.show();
     }
     
+	//syasya comment atas liana
 	// Liana comment
 	public static void main(String[] args) {
 		launch();
