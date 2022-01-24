@@ -1,5 +1,5 @@
 package application;
-
+//Jangan tukar semua variable letak comment je yee terima kasih
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -19,7 +19,7 @@ import javafx.event.ActionEvent;
 
 public class FirstStage implements Initializable{
 
-	
+	//Jangan tukar variable yg ni WARNING!!
 	@FXML
     private Label HighScore;
 
@@ -32,10 +32,11 @@ public class FirstStage implements Initializable{
     @FXML
     private Button Button_Play;
     
-    //Syasya comment
+    //JGN TUKAR
     @FXML
     void ButtonPlay(ActionEvent event) throws Exception{
     	String name = Player_Name.getText();
+    	//name PUNYA VARIABLE JGN TUKAR
     	new SecondStage(name);	
     }
 

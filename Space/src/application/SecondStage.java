@@ -1,5 +1,6 @@
 package application;
 
+//Ni boleh tukar variable pandai pandai lah baca terima kasih!!!
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -54,6 +55,7 @@ public class SecondStage extends Stage{
 	final int MAX_BOMBS = 10,  MAX_SHOTS = MAX_BOMBS * 2;
 	boolean gameOver = false;
 	private GraphicsContext gc;
+	
 	
 	Rocket player;
 	List<Shot> shots;
