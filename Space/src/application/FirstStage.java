@@ -1,6 +1,7 @@
 package application;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -8,13 +9,15 @@ import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.net.URL;
+import java.util.ResourceBundle;
 import java.util.Scanner;
 
 //import java.io.IOException;
 
 import javafx.event.ActionEvent;
 
-public class FirstStage{
+public class FirstStage implements Initializable{
 
 	
 	@FXML
@@ -32,16 +35,8 @@ public class FirstStage{
     
     @FXML
     void ButtonPlay(ActionEvent event) throws Exception{
-    	if(Player_Name.getText().isEmpty()) {
-    		Button_Play.setDisable(true);
-    		Player_Name.setPromptText("Please Enter Your Name");
-    		
-    	}
-    	else{
-    		String name = Player_Name.getText();
-    		new SecondStage(name);
-    	}
-    	
+    	String name = Player_Name.getText();
+    	new SecondStage(name);	
     }
 
 
@@ -65,6 +60,13 @@ public class FirstStage{
 
     	
     }
+
+
+	@Override
+	public void initialize(URL arg0, ResourceBundle arg1) {
+		Button_Play.disableProperty().bind(Player_Name.textProperty().isEmpty());
+		
+	}
 }
 
 
