@@ -32,7 +32,7 @@ public class FirstStage implements Initializable{
     @FXML
     private Button Button_Play;
     
-    
+    //Syasya comment
     @FXML
     void ButtonPlay(ActionEvent event) throws Exception{
     	String name = Player_Name.getText();
