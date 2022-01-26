@@ -40,7 +40,7 @@ public class FirstStage implements Initializable{
     	new SecondStage(name);	
     }
 
-
+// Hafiz kacak
     @FXML
     void ButtonExit(ActionEvent event) {
         
